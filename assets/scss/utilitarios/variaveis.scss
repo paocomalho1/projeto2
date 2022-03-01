@@ -1,0 +1,51 @@
+//cores
+
+$verde: hsl(163, 72%, 41%);
+$vermelho: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+$youtube: hsl(348, 97%, 39%);
+
+
+// tema dark
+
+$toggle-azul: hsl(210, 78%, 56%);
+$toggle-verde: hsl(146, 68%, 55%);
+
+//tema branco
+
+$toggle-branco: hsl(230, 22%, 74%);
+
+//tema dark
+
+$dark-background: hsl(230, 17%, 14%);
+$dark-background-top: hsl(232, 19%, 15%);
+$dark-background-card: hsl(228, 28%, 20%);
+$dark-text: hsl(228, 34%, 66%);
+$branco:hsl(0, 0%, 100%);
+
+//tema branco
+
+$branco-background-top: hsl(225, 100%, 98%);
+$branco-card:hsl(227, 47%, 96%);
+$branco-text: hsl(228, 12%, 44%);
+$branco-text2: hsl(230, 17%, 14%);
+
+//fontes
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@mixin Inter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    
+}
+@mixin Inter-dark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    
+}
+
+

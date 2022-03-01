@@ -1,0 +1,127 @@
+@use "../utilitarios" as *;
+
+.baixo{
+    transition: all 300ms ease-in-out;
+    &__titulo{
+        font-size: 1.5rem;
+        @include Inter-dark;
+        color: $branco-text2;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        @include celular{
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        &--Dark{
+            color: $branco;
+            
+        }
+
+
+    }
+    &__conteiner3{
+        width: 100%;
+
+
+    }
+    &__itens{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        :nth-child(4){
+            margin-right: 0rem;
+        }
+        :nth-child(8){
+            margin-right: 0rem;
+        }
+        @include celular{
+            flex-direction: column;
+            :nth-child(4){
+                margin-right: 2rem;
+            }
+            :nth-child(8){
+                margin-right: 2rem;
+            }
+            :last-child{
+                margin-bottom: 0;
+            }
+            
+        }
+
+
+    }
+    &__item{
+        width: calc(25% - 5.77rem);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background-color: $branco-card;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        border-radius: 5px;
+        transition: all 300ms ease-in-out;
+        &:hover{
+            background-color: hsl(227, 47%, 90%);
+
+        }
+        @include celular{
+            width: calc(100% - 4rem);
+            margin-bottom: 6%;
+        }
+        &--Dark{
+            background-color: $dark-background-card;
+            &:hover{
+                background-color: hsl(228, 28%, 30%) !important;
+    
+            }
+            
+        }
+
+    }
+    &__conteiner-likes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
+
+    }
+    &__likes{
+        @include Inter-dark;
+        color: $branco-text;
+        &--Dark{
+            color: $dark-text;
+        
+        }
+
+    }
+    &__likes-img{
+
+    }
+    &__conteiner-numero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    &__numero{
+        @include Inter-dark;
+        color: $branco-text2;
+        font-size: 1.6rem;
+        &--Dark{
+            color: $branco;
+        }
+
+    }
+    &__conteiner-porcentagem{
+        display: flex;
+        align-items: center;
+    }
+    &__porcentagem{
+        margin-left: 0.3rem;
+        color: $verde;
+        @include Inter-dark;
+        
+    }
+}
